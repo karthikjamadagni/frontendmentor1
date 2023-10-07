@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@media screen and (min-width: 376px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .main_container{
+        width: 100%;
+        height: 100vh;
+        background: #242742;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box_container{
+        background: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 25px;
+        max-width: 28rem;
+        padding: 3rem;
+    }
+    .icon_container{
+        display: inline-block;
+        width: fit-content;
+        margin-bottom: 1rem;
+    }
+    .icon_container img{
+        width: 3rem;
+        height: 3rem;
+    }  
+    
+    .conf_message{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .conf_message button{
+        width: 90%;
+        height: 2.5rem;
+        background-color: hsl(234, 29%, 20%);
+        margin-inline: auto;
+        color: hsl(0, 0%, 100%);
+        border-radius: 12px;
+    }
+    
+    .ack{
+        margin-bottom: 5px;
+    }
+    
+    .info{
+        margin-bottom: 5px;
+    }
+    
+    .ack{
+        font-size: xx-large;
+        font-weight: 700;
+        color: hsl(234, 29%, 20%);
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .main_container{
+        height: 100vh;
+        padding: 2rem;
+        position: relative;
+    }
+
+    .ack{
+        color: #242742;
+        font-weight: 700;
+        font-size: xx-large;
+        margin-top: 30%;
+    }
+
+    .conf_message{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        bottom: 1rem;
+        left: 1%;
+        right: 0.5%;
+    }
+
+    .conf_message button{
+        width: 90%;
+        height: 3rem;
+        background-color: #242742;
+        border-radius: 10px;
+        color: white;
+
+    }
+}
